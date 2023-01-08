@@ -59,6 +59,9 @@
 "HIDE_SHORTS_CHANNEL_AVATAR" = "Shorts 채널 아바타 숨기기";
 "HIDE_SHORTS_CHANNEL_AVATAR_DESC" = "";
 
+"HIDE_SHORTS_LIKE_BUTTON" = "Hide Shorts like button";
+"HIDE_SHORTS_LIKE_BUTTON_DESC" = "";
+
 "HIDE_SHORTS_DISLIKE_BUTTON" = "Shorts 영상 싫어요 버튼 숨기기";
 "HIDE_SHORTS_DISLIKE_BUTTON_DESC" = "";
 

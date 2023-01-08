@@ -59,6 +59,9 @@
 "HIDE_SHORTS_CHANNEL_AVATAR" = "Ẩn hình đại diện của kênh";
 "HIDE_SHORTS_CHANNEL_AVATAR_DESC" = "";
 
+"HIDE_SHORTS_LIKE_BUTTON" = "Hide Shorts like button";
+"HIDE_SHORTS_LIKE_BUTTON_DESC" = "";
+
 "HIDE_SHORTS_DISLIKE_BUTTON" = "Ẩn nút không thích";
 "HIDE_SHORTS_DISLIKE_BUTTON_DESC" = "";
 

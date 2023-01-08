@@ -59,6 +59,9 @@
 "HIDE_SHORTS_CHANNEL_AVATAR" = "ショートのチャンネルのプロフィール画像を非表示";
 "HIDE_SHORTS_CHANNEL_AVATAR_DESC" = "";
 
+"HIDE_SHORTS_LIKE_BUTTON" = "Hide Shorts like button";
+"HIDE_SHORTS_LIKE_BUTTON_DESC" = "";
+
 "HIDE_SHORTS_DISLIKE_BUTTON" = "ショートの低評価ボタンを非表示";
 "HIDE_SHORTS_DISLIKE_BUTTON_DESC" = "";
 

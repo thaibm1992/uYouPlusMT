@@ -59,6 +59,9 @@
 "HIDE_SHORTS_CHANNEL_AVATAR" = "إخفاء الصورة الرمزية لقناة المقطع القصير";
 "HIDE_SHORTS_CHANNEL_AVATAR_DESC" = "إخفاء الصورة الرمزية لقنوات مقاطع Shorts.";
 
+"HIDE_SHORTS_LIKE_BUTTON" = "Hide Shorts like button";
+"HIDE_SHORTS_LIKE_BUTTON_DESC" = "";
+
 "HIDE_SHORTS_DISLIKE_BUTTON" = "إخفاء زر عدم الإعجاب في المقاطع القصيرة";
 "HIDE_SHORTS_DISLIKE_BUTTON_DESC" = "إخفاء زر عدم الإعجاب لمقاطع Shorts.";
 

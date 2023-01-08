@@ -65,6 +65,9 @@
 "HIDE_SHORTS_CHANNEL_AVATAR" = "Ocultar o avatar do canal do Shorts";
 "HIDE_SHORTS_CHANNEL_AVATAR_DESC" = "";
 
+"HIDE_SHORTS_LIKE_BUTTON" = "Ocultar Shorts like button";
+"HIDE_SHORTS_LIKE_BUTTON_DESC" = "";
+
 "HIDE_SHORTS_DISLIKE_BUTTON" = "Ocultar o botão não gostei do Shorts";
 "HIDE_SHORTS_DISLIKE_BUTTON_DESC" = "";
 
