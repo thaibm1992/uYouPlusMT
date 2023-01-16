@@ -497,6 +497,16 @@ extern NSBundle *uYouPlusBundle();
                 }
                 settingItemId:0],
 
+            [YTSettingsSectionItemClass switchItemWithTitle:LOC(@"Hide uYou Tab")
+                titleDescription:LOC(@"Toggle this on to remove the uYou Tab added by MiRO's YouTube Tweak. App restart is required.")
+                accessibilityIdentifier:nil
+                switchOn:IsEnabled(@"hideuYouTab_enabled")
+                switchBlock:^BOOL (YTSettingsCell *cell, BOOL enabled) {
+                    [[NSUserDefaults standardUserDefaults] setBool:enabled forKey:@"hideuYouTab_enabled"];
+                    return YES;
+                }
+                settingItemId:0],  
+
             [YTSettingsSectionItemClass switchItemWithTitle:LOC(@"NEW_MINIPLAYER_STYLE")
                 titleDescription:LOC(@"NEW_MINIPLAYER_STYLE_DESC")
                 accessibilityIdentifier:nil
