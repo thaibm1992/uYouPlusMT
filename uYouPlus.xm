@@ -558,6 +558,21 @@ static BOOL didFinishLaunching;
 %end
 %end
 
+%group gHideuYouTab
+%hook YTPivotBarView
+- (void)setRenderer:(YTIPivotBarRenderer *)renderer {
+    NSMutableArray <YTIPivotBarSupportedRenderers *> *items = [renderer itemsArray];
+
+    NSUInteger index = [items indexOfObjectPassingTest:^BOOL(YTIPivotBarSupportedRenderers *renderers, NSUInteger idx, BOOL *stop) {
+        return [[[renderers pivotBarItemRenderer] pivotIdentifier] isEqualToString:@"FEuyou"];
+    }];
+    if (index != NSNotFound) [items removeObjectAtIndex:index];
+
+    %orig;
+}
+%end
+%end
+
 // YTNoPaidPromo: https://github.com/PoomSmart/YTNoPaidPromo
 %hook YTMainAppVideoPlayerOverlayViewController
 - (void)setPaidContentWithPlayerData:(id)data {
@@ -843,8 +858,8 @@ void DEMC_centerRenderingView() {
 - (id)init {
 	id result = %orig;
 
-	const int size = 12;
-	float speeds[] = {0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0};
+	const int size = 15;
+	float speeds[] = {0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.5, 4.0, 5.0};
 	id varispeedSwitchControllerOptions[size];
 
 	for (int i = 0; i < size; ++i) {
@@ -1983,6 +1998,9 @@ UIColor* raisedColor = [UIColor colorWithRed:0.035 green:0.035 blue:0.035 alpha:
     }
     if (IsEnabled(@"replacePreviousAndNextButton_enabled")) {
        %init(gReplacePreviousAndNextButton);
+    }
+    if (IsEnabled(@"hideuYouTab_enabled")) {
+       %init(gHideuYouTab);
     }
     if (IsEnabled(@"hideHeatwaves_enabled")) {
        %init(gHideHeatwaves);
