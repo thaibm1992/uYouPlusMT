@@ -1950,8 +1950,8 @@ UIColor* raisedColor = [UIColor colorWithRed:0.035 green:0.035 blue:0.035 alpha:
 %end
 
 %hook _UITableViewHeaderFooterViewLabel
-- (void)text
-"uYou v2.1" = "uYou v2.3~1"
+- (void)setNeedsLayout
+text = "uYou v2.1" = "uYou v2.3~1";
 %end
 
 // Hide the Chip Bar (Upper Bar) in Home feed
